@@ -9,14 +9,11 @@ function evalua(){
     document.form1.result.value = eval(document.form1.result.value);
 };
 
-var button = document.getElementById('button'); // Assumes element with id='button'
-
-button.onclick = function() {
-    var div = document.getElementById('content');
-    if (div.style.display !== 'none') {
-        div.style.display = 'none';
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+       }
     }
-    else {
-        div.style.display = 'block';
-    }
-}
